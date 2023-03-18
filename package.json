@@ -13,5 +13,8 @@
   "bugs": {
     "url": "https://github.com/Casey-Kiewit/korver.dev/issues"
   },
-  "homepage": "https://korver.dev"
+  "homepage": "https://korver.dev",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0"
+  }
 }
