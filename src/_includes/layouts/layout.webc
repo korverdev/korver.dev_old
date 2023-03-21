@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>korver.dev</title>
+
+    <link rel="stylesheet" href="../../../node_modules/normalize.css/normalize.css">
+
+    <style>
+        :root {
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+    <style @raw="getBundle('css')" webc:keep></style>
+    <script @raw="getBundle('js')" webc:keep></script>
+</head>
+
+<body @raw="content">
+    <!-- `defer` bucket -->
+    <style @raw="getBundle('css', 'defer')" webc:keep></style>
+    <script @raw="getBundle('js', 'defer')" webc:keep></script>
+</body>
+
+</html>
