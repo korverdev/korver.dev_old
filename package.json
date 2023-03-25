@@ -4,7 +4,11 @@
   "scripts": {
     "build": "npx @11ty/eleventy",
     "format": "npx prettier --write . **/*.webc",
-    "serve": "npx @11ty/eleventy --serve"
+    "serve": "npx @11ty/eleventy --serve",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   },
   "repository": {
     "type": "git",
@@ -19,6 +23,8 @@
   "devDependencies": {
     "@11ty/eleventy": "2.0.0",
     "@11ty/eleventy-plugin-webc": "0.9.4",
+    "husky": "8.0.3",
+    "lint-staged": "13.2.0",
     "normalize.css": "8.0.1",
     "prettier": "2.8.7"
   }
