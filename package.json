@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "build": "npx @11ty/eleventy",
-    "format": "npx prettier --write . **/*.webc",
-    "serve": "npx @11ty/eleventy --serve",
-    "prepare": "husky install"
+    "prepare": "npx husky install",
+    "serve": "npx @11ty/eleventy --serve"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
