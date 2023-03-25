@@ -1,6 +1,5 @@
 {
   "name": "korver.dev",
-  "version": "1.0.0",
   "scripts": {
     "build": "npx @11ty/eleventy",
     "prepare": "npx husky install",
