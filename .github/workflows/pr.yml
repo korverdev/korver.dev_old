@@ -16,4 +16,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - run: npm ci --ignore-scripts --no-audit --omit=optional --progress=false
+
       - run: npm run lint
