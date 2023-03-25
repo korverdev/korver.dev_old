@@ -2,6 +2,8 @@
   "name": "korver.dev",
   "scripts": {
     "build": "npx @11ty/eleventy",
+    "lint": "npm run lint:prettier",
+    "lint:prettier": "prettier --check . **/*.webc",
     "prepare": "npx husky install",
     "serve": "npx @11ty/eleventy --serve"
   },
