@@ -1,9 +1,14 @@
 {
   "name": "korver.dev",
-  "version": "1.0.0",
   "scripts": {
     "build": "npx @11ty/eleventy",
+    "lint": "npm run lint:prettier",
+    "lint:prettier": "prettier --check . **/*.webc",
+    "prepare": "npx husky install",
     "serve": "npx @11ty/eleventy --serve"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   },
   "repository": {
     "type": "git",
@@ -17,10 +22,10 @@
   "homepage": "https://korver.dev",
   "devDependencies": {
     "@11ty/eleventy": "2.0.0",
-    "@11ty/eleventy-plugin-webc": "0.10.0",
-    "normalize.css": "8.0.1"
-  },
-  "optionalDependencies": {
+    "@11ty/eleventy-plugin-webc": "0.9.4",
+    "husky": "8.0.3",
+    "lint-staged": "13.2.0",
+    "normalize.css": "8.0.1",
     "prettier": "2.8.7"
   }
 }
