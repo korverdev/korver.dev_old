@@ -13,11 +13,13 @@ npm install
 ## Run Instructions
 
 To build the website once in the `_site/` folder:
+
 ```shell
 npm run build
 ```
 
 To continually serve the website on a local server:
+
 ```shell
 npm run serve
 ```
