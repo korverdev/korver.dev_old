@@ -1,7 +1,6 @@
 .devcontainer/
 .github/
 .vscode/
-_site/
 node_modules/
 
 .gitignore
