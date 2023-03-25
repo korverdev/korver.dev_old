@@ -17,7 +17,7 @@
   "homepage": "https://korver.dev",
   "devDependencies": {
     "@11ty/eleventy": "2.0.0",
-    "@11ty/eleventy-plugin-webc": "0.9.4",
+    "@11ty/eleventy-plugin-webc": "0.10.0",
     "normalize.css": "8.0.1"
   },
   "optionalDependencies": {
