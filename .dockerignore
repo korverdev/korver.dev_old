@@ -1,7 +1,9 @@
 .devcontainer/
 .github/
 .vscode/
+_site/
 node_modules/
 
+.dockerignore
 .gitignore
 README.md
