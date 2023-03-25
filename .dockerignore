@@ -4,5 +4,6 @@
 _site/
 node_modules/
 
+.dockerignore
 .gitignore
 README.md
