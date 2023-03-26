@@ -11,8 +11,16 @@
 
     <style>
       :root {
-        background-color: black;
-        color: white;
+        --background-color: black;
+        --color: white;
+
+        background-color: var(--background-color);
+        color: var(--color);
+      }
+
+      svg {
+        fill: var(--color);
+        stroke: var(--color);
       }
     </style>
 
@@ -20,9 +28,5 @@
     <script @raw="getBundle('js')" webc:keep></script>
   </head>
 
-  <body @raw="content">
-    <!-- `defer` bucket -->
-    <style @raw="getBundle('css', 'defer')" webc:keep></style>
-    <script @raw="getBundle('js', 'defer')" webc:keep></script>
-  </body>
+  <body @raw="content"></body>
 </html>
