@@ -1,0 +1,13 @@
+<c-logo></c-logo>
+
+<style webc:scoped>
+  :host {
+    display: grid;
+    height: 100vh;
+  }
+
+  :host c-logo {
+    justify-self: center;
+    align-self: center;
+  }
+</style>
