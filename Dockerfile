@@ -1,4 +1,4 @@
-FROM node AS build
+FROM --platform=$BUILDPLATFORM node AS build
 
 COPY package-lock.json .
 RUN npm ci --ignore-scripts --no-audit --omit=optional --progress=false
