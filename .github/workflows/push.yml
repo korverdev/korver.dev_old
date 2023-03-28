@@ -38,3 +38,18 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+
+  delete_images:
+    name: Delete Old Images
+    runs-on: ubuntu-latest
+    needs: build_image
+    permissions:
+      packages: write
+    steps:
+      - name: Delete Old Images
+        uses: actions/delete-package-versions@v4
+        with:
+          package-name: ${{ github.event.repository.name }}
+          package-type: container
+          delete-only-untagged-versions: true
+          token: ${{ secrets.GITHUB_TOKEN }}
