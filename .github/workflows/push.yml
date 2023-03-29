@@ -30,19 +30,19 @@ jobs:
         with:
           platforms: amd64,arm64
 
-      - name: Set up Docker BuildX
+      - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
 
       # This step isn't strictly necessary, but I'm leaving this for better flexibility
       # should I want to get more detailed with my tags.
-      - name: Get Metadata for Image
+      - name: Get metadata for image
         uses: docker/metadata-action@v4
         id: meta
         with:
           images: ${{ env.DOCKER_REGISTRY }}/${{ github.repository }}
           tags: latest
 
-      - name: Build & Push Image
+      - name: Build & push image
         uses: docker/build-push-action@v4
         with:
           push: true
@@ -57,7 +57,7 @@ jobs:
     permissions:
       packages: write
     steps:
-      - name: Delete Old Images
+      - name: Delete old images
         uses: actions/delete-package-versions@v4
         with:
           package-name: ${{ github.event.repository.name }}
