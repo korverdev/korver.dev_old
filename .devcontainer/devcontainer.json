@@ -2,5 +2,14 @@
   "name": "korver.dev",
   "image": "mcr.microsoft.com/devcontainers/javascript-node",
   "forwardPorts": [8080],
-  "postStartCommand": "npm install"
+  "postStartCommand": "npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "github.copilot",
+        "github.vscode-github-actions"
+      ]
+    }
+  }
 }
