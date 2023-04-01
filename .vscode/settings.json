@@ -4,6 +4,5 @@
   "editor.tabSize": 2,
   "files.associations": {
     "*.webc": "html"
-  },
-  "prettier.requireConfig": false
+  }
 }
