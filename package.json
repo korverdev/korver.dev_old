@@ -22,7 +22,7 @@
   "homepage": "https://korver.dev",
   "devDependencies": {
     "@11ty/eleventy": "2.0.1",
-    "@11ty/eleventy-plugin-webc": "0.10.1",
+    "@11ty/eleventy-plugin-webc": "0.11.0",
     "html-minifier-terser": "7.1.0",
     "husky": "8.0.3",
     "lint-staged": "13.2.0",
