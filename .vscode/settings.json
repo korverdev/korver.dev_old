@@ -4,5 +4,7 @@
   "editor.tabSize": 2,
   "files.associations": {
     "*.webc": "html"
-  }
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true
 }
