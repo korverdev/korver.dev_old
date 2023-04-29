@@ -1,9 +1,9 @@
-.devcontainer/
-.github/
-.vscode/
+# Wildcards.
+.*
+
+# Folders.
 _site/
 node_modules/
 
-.dockerignore
-.gitignore
+# Files.
 README.md
