@@ -5,7 +5,7 @@
     "lint": "npm run lint:prettier",
     "lint:prettier": "prettier --check . **/*.webc",
     "prepare": "npx husky install",
-    "serve": "npx @11ty/eleventy --serve"
+    "start": "npx @11ty/eleventy --serve"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
