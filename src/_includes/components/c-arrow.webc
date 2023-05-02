@@ -1,0 +1,12 @@
+<svg viewBox="-2 -2 84 44">
+  <path
+    d="M 0 0 L 38 38 M 38 38 Q 40 40, 42 38 M 42 38 L 80 0 Z"
+    stroke-width="4"
+  />
+</svg>
+
+<style webc:scoped>
+  :host svg {
+    width: 80px;
+  }
+</style>
