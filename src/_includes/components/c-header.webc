@@ -1,4 +1,5 @@
 <c-logo></c-logo>
+<c-arrow></c-arrow>
 
 <style webc:scoped>
   :host {
@@ -9,5 +10,10 @@
   :host c-logo {
     justify-self: center;
     align-self: center;
+  }
+
+  :host c-arrow {
+    justify-self: center;
+    align-self: end;
   }
 </style>
