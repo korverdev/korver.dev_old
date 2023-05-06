@@ -2,7 +2,7 @@
   "name": "korver.dev",
   "image": "mcr.microsoft.com/devcontainers/javascript-node",
   "forwardPorts": [8080],
-  "postStartCommand": "npm install",
+  "postStartCommand": "npm install -g npm && npm install",
   "customizations": {
     "vscode": {
       "extensions": [
