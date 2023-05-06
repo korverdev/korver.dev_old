@@ -28,5 +28,7 @@
     <script @raw="getBundle('js')" webc:keep></script>
   </head>
 
-  <body @raw="content"></body>
+  <body>
+    <main @raw="content"></main>
+  </body>
 </html>
