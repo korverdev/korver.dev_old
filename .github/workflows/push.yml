@@ -11,7 +11,7 @@ env:
 jobs:
   build_image:
     name: Build & Publish Image
-    runs-on: ubuntu-latest
+    runs-on: ${{ vars.RUNNER }}
     permissions:
       packages: write
     steps:
